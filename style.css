@@ -1,0 +1,1403 @@
+
+/*Les polices*/
+
+@font-face {
+  font-family: 'roboto_regular' ;
+  src: url(polices/Roboto-Regular-webfont.ttf);
+  src: url(polices/Roboto-Regular-webfont.woff);
+}
+
+@font-face {
+  font-family: 'roboto_light' ;
+  src: url(polices/Roboto_condensed/RobotoCondensed-Light.ttf);
+}
+
+@font-face {
+  font-family: 'LeageGothic-regular';
+  src: url("polices/LeagueGothic-Regular.otf");
+  src: url("polices/LeagueGothic-Regular.ttf");
+  src: url("polices/LeagueGothic-Regular.woff");
+  src: url("polices/LeagueGothic-Regular.woff2");
+}
+
+@font-face {
+  font-family: 'tech logo';
+  src: url("polices/logo-font/chintzys.ttf");
+}
+
+
+/* général */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+body{
+    font-family: 'Share Tech', sans-serif;
+}
+
+h1{
+    padding-top: 150px;
+    padding-left: 70px;
+}
+
+a{
+  text-decoration: none;
+}
+
+/**************** header - start ****************/
+ 
+ 
+header{
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow:2px 2px 30px #9d9d9d;
+}
+
+#logotext{
+margin-top: 3%;
+font-size: 3.7em;
+font-family: 'tech logo';
+color: rgb(0, 0, 0);
+}
+
+#logotext:hover{
+color: #0088ff;
+}
+
+#box1{
+  display: flex;
+  flex-direction: row;
+}
+#box1 a{
+padding-top: 3px;
+}
+
+
+#box2{
+align-self: center;
+padding-top: 10px;
+padding-right: 50px;
+}
+
+
+
+header p{
+color: black;
+font-size: 40px;
+margin-top: 3px;
+}
+
+header a{
+  text-decoration: none;
+
+}
+
+#logo-box{
+  padding-left: 40px;
+  padding-top: 9px;
+}
+
+#logo-box img{
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border-radius: 100%;
+ 
+}
+
+#box2 a {
+color: black;
+font-family: 'roboto_regular';
+font-weight: bold;
+padding: 12px;
+text-decoration: none;
+font-size: 18px;
+line-height: 25px;
+border-radius: 10px;
+background-color: rgb(250 250 250);
+margin-right: 3px;
+}
+
+#box2 a:hover {
+background-color: #ffa702;
+color: white;
+}
+
+#box2 a.active {
+background-color: #0088ff;
+color: white;
+
+}
+
+.no_active{
+border: 2px solid rgb(236, 236, 236);
+
+}
+
+/*************** header - end ****************/
+
+/*************** footer - start ***************/
+
+footer{
+border-top: 2px solid rgb(151, 151, 151);
+color: white;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+height: 30vh;
+width: 100%;
+background-color: #141414;
+box-shadow:-2px 0px 30px #000000;
+}
+#block-black-up{
+display: flex;
+justify-content: space-around;
+}
+#block-black-down{
+display: flex;
+justify-content: space-around;
+}
+#block-black-down li{
+  cursor: pointer;
+  border-bottom: 0.125rem solid #0088ff;
+  }
+
+#logo-block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'tech logo';
+  font-size: 50px;
+  margin-top: 5px;
+}
+footer img{
+  height: 140px;
+  width: 140px;
+}
+
+footer ul{
+  display: flex;
+  list-style: none;
+}
+footer li{
+  margin: 7px;
+}
+
+#social-block h3{
+  font-size: 30px;
+}
+
+#social-block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#social-block img{
+  width: 50px;
+  height: 50px;
+  color: white;
+  margin: 5px;
+  cursor: pointer;
+}
+
+#social-block img:hover{
+background-color:#ffa702 ;
+border-radius: 12px;
+}
+
+
+#white-block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  color: #000000;
+  width: 100%;
+  height: 30px;
+}
+
+#white-block li{
+cursor: pointer;
+}
+
+footer a:-webkit-any-link {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/*************** footer - end ***************/
+
+/* ################ Page Accueil - START ################ */
+
+/*************** block_page-1 - start ****************/
+#block_page-1 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 70px);
+  font-family: 'Share Tech', sans-serif;
+  color: white;
+  text-shadow: 4px 4px 10px #0000008c;
+  background-color: #343a40;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%239C92AC' fill-opacity='0.25' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"), linear-gradient(to right top, #343a40, #2b2c31, #211f22, #151314, #000000);
+}
+
+#pg1-txt{ /* block parent de h1 et p */
+  display: flex;
+  flex-direction: column;
+  width:40% ;
+}
+
+#pg1-txt h1{
+  margin-left: 10%;
+  padding: 0%;
+  display: flex;
+  flex-direction: row;
+  font-size: 3em;
+
+}
+#pg1-txt p{
+  width: 65%;
+  margin-left: 10%; 
+  padding-top: 15px;
+  font-size: 1.5em;
+  line-height: 150%;
+
+}
+
+#pg1-txt span{
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+#pg1-txt span:hover{
+  color:dodgerblue;
+  cursor: pointer;
+}
+
+#images-3_phones{ /* block parent de 3 images */
+  width: 70%;
+  height: 70%;  
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  justify-content: center;
+
+
+}
+
+#block_page-1 img{
+  padding-right: 50px;
+  margin-right: 5%;
+  height: 450px;
+  padding: 10px;
+}
+
+
+/*************** block_page-1 - end ****************/
+
+/*separateur start*/
+
+.content {
+  height: 25px;
+  position: relative;
+  border-bottom: 2px solid;
+}
+
+.header {
+  height: 25px;
+  background: rgb(255, 255, 255);
+  z-index: 0;
+  position: relative;
+  border-bottom: 1px solid #c5c5c5;
+  box-shadow: 0 0 50px 10px #303030;
+}
+
+.circle-border {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  bottom: -19px;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  border: -1px solid #c5c5c5;
+  box-shadow:0 0 20px #979696;
+}
+.circle {
+  width: 35px;
+  height: 35px;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  bottom: -18px;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 25px;
+  line-height: 46px;
+
+}
+
+.circle img{
+  height: 28px;
+
+}
+
+
+/*separateur end*/
+
+/*bouton - start*/
+
+.button {
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px #0000008c;
+  background-color: #ffffff;
+  border: none;
+  color: #000000;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 27px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*bouton - end*/
+
+/*************** block_page-2 - start ****************/
+
+#block_page-2 {
+  width: 100%;
+  height: calc(100vh + 250px);
+  font-family: 'Share Tech', sans-serif;
+  color: white;
+  align-items: center;
+  text-shadow: 2px 2px 10px #0000008c;
+  background: rgb(3,145,252);
+  background: linear-gradient(90deg, rgba(3,145,252,1) 0%, rgba(6,106,255,1) 96%);
+  display: flex;
+  justify-content: center;
+}
+
+#block_page-2 img{
+  height: 80%;
+  margin-top: 10%;
+  margin-left: 7%;
+ 
+}
+
+#block_page-2 div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5%;
+  padding-left: 5%;
+  width: 40%;
+  }
+  
+#block_page-2 h2{
+  font-size: 3em;
+  text-align: center;
+}
+#block_page-2 h2 span{
+  font-size: 1.2em;
+  text-align: center;
+}
+#block_page-2 p{
+  margin-top: 5%;
+  font-size: 1.5em;
+  text-align: justify;
+  width: 85%;
+}
+
+/*************** block_page-2 - end ****************/
+
+/*************** block_page-3 - start ****************/
+
+#block_page-3 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height:  calc(100vh + 250px);
+  font-family: 'Share Tech', sans-serif;
+  color: white;
+  align-items: center;
+  text-shadow: 2px 2px 10px #0000008c;
+
+  background-color: #00a547 ;
+}
+
+#block_page-3 img{
+  height: 60%;
+  margin-top: 3%;
+}
+
+#block_page-3 div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5%;
+  width: 40%;
+  }
+  
+#block_page-3 h2{
+  font-size: 2.5em;
+  text-align: center;
+}
+#block_page-3 h2 span{
+  font-size: 1.2em;
+  text-align: center;
+}
+#block_page-3 p{
+  margin-top: 5%;
+  font-size: 1.5em;
+  text-align: justify;
+  width: 85%;
+}
+
+/*************** block_page-3 - end ****************/
+
+/*************** block_page-4 - start ****************/
+
+
+#block_page-4 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height:  calc(100vh + 250px);
+  font-family: 'Share Tech', sans-serif;
+  color: white;
+  align-items: center;
+  background: #252525;
+  z-index: 0;
+
+  }
+
+  
+#block_page-4 img{
+  height: 100%;
+  z-index: 3;
+  position: relative;
+  margin-left: auto;
+}
+
+#block-page-4-box1{
+  display: flex;
+  flex-direction: column;
+  align-items: fle;
+  width: 100%;
+  z-index: 2;
+  position: absolute;
+  }
+  
+#block_page-4 h2{
+  font-size: 3em;
+  text-align: center;
+  z-index: 1;
+  width: 35%;
+  margin-left: 5vw;
+}
+#block-4-logo{
+  margin-top: 7vh;
+  margin-bottom: 7vh;
+  font-size: 3em;
+  justify-content: flex-start;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 1;
+  background-color: white;
+  height: 110px;
+  width: 100%;
+}
+
+#youtube-logo-text{
+  font-family: 'LeageGothic-regular';
+  font-weight: 500;
+  font-size: 1.5em;
+  color: #000000;
+  z-index: 99;
+  margin-left: 15px;
+}
+
+
+#block-4-logo img{
+margin-left:5%;
+height: 150px;
+z-index: 4;
+box-shadow: 5px 5px 10px #0000008c;
+border-radius: 50%;
+
+}
+
+#block_page-4 p{
+  font-size: 1.5em;
+  text-align: start;
+  width: 34vw;
+  margin-left: 6vw;
+}
+
+#youtube-page-button {
+  margin-left: 13vw;
+}
+
+
+
+/*************** block_page-4 - end ****************/
+
+/* ################ Page Accueil - END ################ */
+
+/* ################ Page Shazam - START ################ */
+
+/* Polices page shazam - start */
+@font-face {
+  font-family: 'Montreal_bold' ;
+  src: url(polices/Montreal/PPNeueMontreal-Bold.otf);
+}
+@font-face {
+  font-family: 'Montreal_book' ;
+  src: url(polices/Montreal/PPNeueMontreal-Book.otf);
+}
+@font-face {
+  font-family: 'Montreal_italic' ;
+  src: url(polices/Montreal/PPNeueMontreal-Italic.otf);
+}
+@font-face {
+  font-family: 'Montreal_medium' ;
+  src: url(polices/Montreal/PPNeueMontreal-Medium.otf);
+}
+@font-face {
+  font-family: 'Montreal_semiBolditalic' ;
+  src: url(polices/Montreal/PPNeueMontreal-SemiBolditalic.otf);
+}
+@font-face {
+  font-family: 'Montreal_thin' ;
+  src: url(polices/Montreal/PPNeueMontreal-Thin.otf);
+}
+
+/* Polices page shazam - end */
+
+/* Block page 1 - start */
+
+#logo-shazam{
+  height: 10vh;
+  align-self: center;
+  margin-top: 5vh;
+}
+
+#shazam-bp1{
+  background-color: #efeeee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+#shazam-h1{
+  margin-top: 30px;
+  width: 44%;
+  font-family: 'Montreal_bold';
+  font-size: 50px;
+  line-height: 60px;
+  text-align: center;
+}
+
+#shazam-bp1 p{
+  width: 44%;
+  font-family: 'Montreal_book';
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin: 30px;
+}
+
+#phones{
+  margin-top: 20px;
+  height: 100vh;
+}
+
+/* Block page 1 - end */
+
+/* QR - start */
+
+#block_blanc_de_QR-code{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 44%;
+  background-color: white;
+  height: 216px;
+  border-radius: 16px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#qr-code{
+  width: 150px;
+  height: 150px;
+  margin: 30px;
+}
+
+#qr-title{
+  font-family: 'Montreal_medium' ;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 26px;
+  margin-bottom: 6px;
+}
+
+#qr-subtitle{
+  font-family: 'Montreal_medium' ;
+  font-size: 16px;
+  margin-bottom:37px ;
+}
+
+#qr-upper{
+  font-family: 'Montreal_medium' ;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+#links-container{
+display: flex;
+color: #0088ff;
+font-weight: 600;
+}
+
+
+
+#text-base-link link{
+  font-size: 16px;
+  letter-spacing: .33px;
+  font-weight: 700;
+  color: #0088ff;
+  cursor: pointer;
+}
+
+#barre{
+  margin-right: 5px;
+  color: #000000;
+  font-size: 13px;
+}
+
+.arrow-up-right{
+  height: 12px;
+  width: 12px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+#shazam-bp1 h2{
+  font-family: 'Montreal_bold';
+  font-size: 32px;
+}
+
+/* QR - end */
+
+/* box blue - start */
+
+#box-blue{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 85%;
+  height: calc(100vh + 5vh);
+  border-radius: 36px;
+  background-image: linear-gradient(to bottom,#0bf,#066aff);
+  margin-bottom: 30px;
+}
+
+#box-blue img{
+  width: 80%;
+}
+
+#chrome-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #0088ff;
+  width: 20%;
+  height: 60px;
+  border-radius: 15px;
+  background-color: white;
+  margin: 5vh;
+  box-shadow: 3px 3px 5px  #0080e2;
+  cursor: pointer;
+}
+
+#chrome-title{
+  font-family: 'Montreal_bold' ;
+  color: white;
+  font-size: 30px;
+  text-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
+}
+
+#chrome-subtitle{
+  font-family: 'Montreal_medium' ;
+  color: white;
+  font-size: 20px;
+  margin: 7px;
+  text-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
+}
+
+#chrome-box img{
+  margin-right: 10px;
+  height: 40px;
+  width: 40px;
+  
+}
+
+#chrome-box div{
+  font-family: 'Montreal_bold';
+}
+
+/* box blue - end */
+
+/* 3 blocks - start */
+
+.les-3-blocks{
+
+display: flex;
+flex-direction: row;
+}
+
+.block{
+  width: 59vh;
+  height: 95vh;
+  background-color: white;
+  margin: 8px;
+  border-radius: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.block-1-contenu
+{
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+.block-1-title{
+  font-family: 'Montreal_bold' ;
+  font-size: 20px;
+  margin-top: 16px;
+}
+.block-1-subtitle{
+  font-family: 'Montreal_book' ;
+  font-size: 16px;
+  margin-top: 8px;
+}
+.block-1-upper{
+  font-family: 'Montreal_bold' ;
+  font-size: 14px;
+  
+  color: #0088ff;
+  
+}
+
+.block-1-upper:hover{
+text-decoration: underline;
+cursor: pointer;
+}
+
+.les_3_blocks-phone-photo{
+margin-top: 34px;
+}
+
+.block1-1-upper-block{
+margin-top: 20px;
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+
+.arrow-up-right-small{
+  height: 20px;
+  width: 10px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+/* 3 blocks - end */
+
+/* snapchat and watches - start */
+
+#block-snapchat_and_watch{
+width: 85%;
+height: 80vh;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin-top: 75px;
+margin-bottom: 50px;
+}
+
+.yellow_and_black_title{
+  font-family: 'Montreal_bold' ;
+  font-size: 32px;
+}
+
+.yellow_and_black_subtitle{
+  font-family: 'Montreal_book' ;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+#yellow_block{               /*yellow block*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e9df2d;
+  height: 100%;
+  width: 35%;
+  border-radius: 36px;
+  margin-right: 15px;
+}
+
+#snapchat-logo{
+margin-top: 132px;
+}
+
+#yellow_block #text_block{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 65%;
+  border-radius: 36px;
+}
+
+.yellow-upper-block{
+display: flex;
+margin-top: 10px;
+}
+
+.yellow-upper{
+color: #0088ff;
+font-family: 'Montreal_bold' ;
+cursor: pointer;
+}
+
+#black_block{                  /*black block*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #000000;
+  height: 100%;
+  width: 65%;
+  border-radius: 36px;
+}
+
+#black_block #text_block{
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+  width: 50%;
+  border-radius: 36px;
+  color: white;
+}
+
+#black_block img{
+  margin-bottom: 70px;
+}
+
+/* snapchat and watches - end */
+
+
+
+/* ################ Page Shazam - END ################ */
+
+
+/* ################ Page Spotify - START ################ */
+
+@font-face {
+  font-family: 'spotify-circular' ;
+  src: url(polices/CircularStd-Black.otf);
+}
+
+@font-face {
+  font-family: 'helvetica-regular';
+  src: url("polices/Helvetica-regular.ttf");
+}
+
+
+#spotify-main{
+background-color: white;
+font-family: 'spotify-circular' ;
+}
+
+#logo-spotify{
+  height: 13vh;
+  margin-top: 5vh;
+  background-color: black;
+  padding: 10px;
+  border-radius: 15px;
+  opacity: 90%;
+  box-shadow: 2px 2px 9px #535252;
+}
+
+
+#sp-block-page-1{
+  height: 80vh;
+  width: 100%;
+  background: url(images/spotify/bubbles-dktp.svg) 
+  center -138px / 100% 1068px no-repeat, 
+  linear-gradient(-45deg, rgb(108, 14, 224) -5%, rgb(240, 55, 166));
+  
+}
+
+#sp-container-1{
+  height: 80vh;
+  position: relative;
+}
+
+#phone-titre-and-p{
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  display: flex;
+  height: 72vh;
+}
+
+#phone-block img{
+  height: 72vh;
+}
+
+#block1-titre-and-button{
+  margin-left: 98px;
+  width: 60%;
+}
+
+#sp-b1-titre{
+  color: white;
+  font-size: 64px;
+  line-height: 73.6px;
+  margin-top: 30px;
+  text-shadow: 2px 2px 9px #535252;
+}
+
+.sp-button {
+  font-family: 'helvetica-regular';
+  border-radius: 30px;
+  box-shadow: 2px 2px 10px #9694948c;
+  background-color: #ffffff;
+  border: none;
+  color: #000000;
+  text-align: center;
+  font-size: 15px;
+  padding: 17px;
+  width: 280px;
+  cursor: pointer;
+  margin-top: 38px;
+  text-transform: uppercase;
+  letter-spacing: normal;
+  font-weight: 700;
+  box-shadow: 2px 2px 9px #535252;
+}
+
+/* sp-block-icons - start */
+
+.sp-titres-p-q{
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 75px;
+  margin-bottom: 72px;
+}
+
+#four-icons-blocks{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 75px;
+}
+
+.icon-block{
+  width: 264px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+}
+
+.icon-block img{
+  height: 140px;
+  width: 140px;
+  box-shadow: 2px 2px 9px #535252;
+  border-radius: 50%;
+}
+
+.icon-title{
+  font-size: 21px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.icon-p{
+  font-family: 'helvetica-regular';
+  font-size: 16px;
+  line-height: 24px;
+}
+/* sp-block-icons - end */
+
+/* gratuit - start */
+
+#sp-gratuit{
+  height: 500px;
+  width: 100%;
+  background: linear-gradient(rgb(176, 35, 194) 15%, rgb(96, 11, 231));
+  font-size: 48px;
+  color: white;
+  text-align: center;
+  line-height: 57.6px;
+  padding-top: 190px;
+  text-shadow: 2px 2px 9px #535252;
+}
+
+/* gratuit - end */
+
+/* questions - start */
+
+#sp-questions{
+  width: 100%;
+  height: auto;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-bottom: 100px;
+}
+
+.accordion {
+  font-family: 'spotify-circular' ;
+  background-color: rgb(255, 255, 255);
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  transition: 0.4s;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+ul li{
+  list-style: none;
+}
+
+.active, .accordion:hover {
+  background-color: rgb(241, 241, 241); 
+  border-radius: 0 0 15px 15px;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  font-family: 'helvetica-regular';
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.panel p{
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+.panel ul{
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.angle-arrow{
+  width: 20px;
+  height: 20px;
+}
+
+.active .angle-arrow{
+  transform: scaleY(-1);
+}
+
+.green{
+  color: #117a37;
+  font-weight: 600;
+}
+
+/* questions - end */
+
+/* gratuit - start */
+
+#sp-pret{
+  height: 500px;
+  width: 100%;
+  background: url(https://www.scdn.co/i/free/lets-play.svg) left -10px bottom -160px / 100% 1114px no-repeat, linear-gradient(-45deg, rgb(108, 14, 224) 16%, rgb(240, 55, 166)) rgb(108, 14, 224);
+  font-size: 80px;
+  color: white;
+  text-align: center;
+  padding-top: 190px;
+  display: flex;
+  flex-direction: column;align-items: center;
+}
+
+#sp-pret-text{
+  text-shadow: 2px 2px 9px #535252;
+}
+
+/* gratuit - end */
+
+/* ################ Page Spotify - END ################ */
+
+/* ################ Page Youtube Music - START ################ */
+
+#main-yt{
+  background-color: black;
+}
+
+#yt-big-block-page1{
+  background-color: #282828;
+  
+}
+
+#yt-block-page-1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#yt-block-prix{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  width: 42%;
+  color: white;
+  text-align: center;
+
+  font-size: 19px;
+}
+#yt-block-prix img{
+width: 92%;
+margin-top: 96px;
+}
+
+#yt-h1{
+  padding: 48px 0px 58px 0px;
+  font-family: 'roboto_light' ;
+  font-weight: 300;
+}
+
+
+#yt-button {
+  background-color: #3ea6ff;
+  text-transform:uppercase ;
+  font-family: 'roboto_regular' ;
+  font-weight: 900;
+  text-align: center;
+  padding: 10px 15px 10px 15px;
+  border-radius: 3px;
+  color: white;
+  margin-bottom: 23px ;
+  cursor: pointer;
+}
+
+.font-24px{
+  font-size: 24px;
+}
+.font-16px{
+  font-size: 16px;
+}
+.font-14px{
+  font-size: 14px;
+}
+.color-blue{
+  color: #3ea6ff;
+  cursor: pointer;
+}
+
+#nous{
+  margin-top: 15px;
+  margin-bottom: 29px;
+  line-height: 25px;
+}
+
+#offre{
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+
+/* block-icons - start */
+
+#block-icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#block-icons img{
+width: 85px;
+height: 85px;
+margin-top: 24px;
+margin-bottom: 16px;
+}
+
+.box{
+  height: 272px;
+  width: 314px;
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titres-icons{
+  color: white;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#main-yt p{
+  color: #aaaaaa;
+  text-align: center;
+}
+
+/* block-icons - end */
+
+/* block images - start */
+
+#big-img1{
+  width: 100%;
+  height: 76vh;
+  margin-bottom: 24px;
+  background-image: url(images/youtube-music/block-img-1.jpg);
+  background-size: 100%;
+  position: relative;
+}
+
+#big-img2{
+  width: 100%;
+  height: 76vh;
+  margin-bottom: 24px;
+  background-image: url(images/youtube-music/block-img-2.jpg);
+  background-size: 100%;
+  position: relative;
+}
+
+#big-img3{
+  width: 100%;
+  height: 76vh;
+  background-image: url(images/youtube-music/block-img-3.jpg);
+  background-size: 100%;
+  position: relative;
+}
+
+.img-text-block-left{
+width: 500px;
+height: 100%;
+position: absolute;
+left: 17%;
+}
+
+.img-text-block-right{
+  width: 500px;
+  height: 100%;
+  position: absolute;
+  right: 17%;
+}
+
+.title-big-img{
+color: white;
+font-size: 48px;
+margin-top: 177px;
+margin-bottom: 24px;
+}
+
+.img-p{
+color: white;
+opacity: 70%;
+font-size: 20px;
+}
+
+/* block images - end */
+
+
+
+/* block questions - start */
+
+#block-questions{
+  height: 84px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  margin-top: 75px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.sp-pret-button {
+  font-family: 'helvetica-regular';
+  border-radius: 30px;
+  box-shadow: 2px 2px 10px #9694948c;
+  background-color: #ffffff;
+  border: none;
+  color: #000000;
+  text-align: center;
+  font-size: 15px;
+  padding: 17px;
+  width: auto;
+  cursor: pointer;
+  margin-top: 38px;
+  text-transform: uppercase;
+  letter-spacing: normal;
+  font-weight: 700;
+  box-shadow: 2px 2px 9px #535252;
+}
+/* block questions - end */
+
+/* ################ Page Youtube Music - END ################ */

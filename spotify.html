@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tech compass - Spotify</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    <body>
+        <!--header-->
+        <header>
+            <div id="box1">
+                <div id="logo-box">
+                    <a href=index.html><img src="images/logo.png" alt="logo"></a>
+                </div>
+                <a href="index.html"><p id="logotext">Tech Compass</p></a>
+            </div>
+            <div id="box2">
+                <a class="active" href=index.html>Accueil</a>
+                <a class="no_active" href="shazam.html" >Appli 1 : Shazam</a>
+                <a class="no_active" href="spotify.html" >Appli 2 : Spotify</a>
+                <a class="no_active" href="youtube-music.html" >Appli 3 : Youtube Music</a>
+            </div>
+        </header>
+        <!--header end-->
+<main id="spotify-main">
+
+<!-- block-page-1 - start -->
+
+<div id="sp-block-page-1">
+    <div id="sp-container-1">
+        <div id="phone-titre-and-p">
+            <div id="phone-block">
+                <img src="images/spotify/phone.png" alt="phone photo">
+            </div>
+            <div id="block1-titre-and-button">
+                <img id="logo-spotify" src="images/spotify/Spotify-Logo.png" alt="logo of shazam">
+                <div id="sp-b1-titre">Écoutez des millions de titres et de podcasts, gratuitement.</div>
+                <div class="sp-button">téléchargez spotify free</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--  block-page-1 - end -->
+
+<!-- icons-block - start -->
+
+<div id="sp-block-icons">
+    <div class="sp-titres-p-q" >Pourquoi Spotify ?</div>
+    <div id="four-icons-blocks">
+        <div class="icon-block">
+            <img src="images/spotify/icon1.png" alt="">
+            <div class="icon-title" >Écoutez vos titres préférés.</div>
+            <div class="icon-p">Écoutez les titres que vous aimez, découvrez des nouveautés et des podcasts.</div>
+        </div>
+        <div class="icon-block">
+            <img src="images/spotify/icon2.png" alt="">
+            <div class="icon-title" >Encore plus facile qu'une liste de courses.</div>
+            <div class="icon-p">Nous allons vous aider à créer des playlists. Ou profitez des playlists créées par des experts en musique.</div>
+        </div>
+        <div class="icon-block">
+            <img src="images/spotify/icon3.png" alt="">
+            <div class="icon-title" >Écoutez votre cœur.</div>
+            <div class="icon-p">Faites-nous part de vos préférences, et nous vous recommanderons des titres.</div>
+        </div>
+        <div class="icon-block">
+            <img src="images/spotify/icon4.png" alt="">
+            <div class="icon-title" >Économisez vos données mobiles.</div>
+            <div class="icon-p">Pour préserver votre forfait tout en écoutant de la musique, activez l'Économiseur de données dans les Préférences.</div>
+        </div>
+    </div>
+</div>
+
+<!-- icons-block - end -->
+
+<!-- gratuit - start -->
+
+<div id="sp-gratuit">
+    C'est gratuit.<br>
+    Aucune carte de crédit n'est requise.
+</div>
+
+<!-- gratuit - end -->
+
+<!-- questions - start -->
+<div class="sp-titres-p-q">Des questions ?</div>
+<div id="sp-questions">
+
+    <button class="accordion">Comment créer une playlist ?
+        <img class="angle-arrow" src="images/spotify/angle-arrow-down.png" alt="">
+    </button>
+    <div class="panel">
+        <p>Les playlists sont un excellent moyen de sauvegarder votre collection musicale, pour vous ou pour les partager.</p>
+        <p>Pour en créer une :</p>
+        <ul>
+            <li>1. Appuyez sur la Bibliothèque.</li>
+            <li>2. Appuyez sur <span class="green">CRÉER.</span></li>
+            <li>3. Donnez un nom à votre playlist.</li>
+            <li>4. Commencez à ajouter des titres (et nous vous en proposerons des similaires).</li>
+        </ul>
+    </div>
+    
+    <button class="accordion">Comment activer le mode Économiseur de données ?
+        <img class="angle-arrow" src="images/spotify/angle-arrow-down.png">
+    </button>
+    <div class="panel">
+        <ul>
+            <li>1. Appuyez sur <span class="green">Accueil.</span></li>
+            <li>2. Appuyez sur <span class="green">Préférences.</span></li>
+            <li>3. Appuyez sur <span class="green">Économiseur de données.</span></li>
+            <li>4. Activez l'Économiseur de données.</li>
+        </ul>
+    </div>
+    
+    <button class="accordion">Suis-je obligé d'écouter de la musique en mode aléatoire ?
+        <img class="angle-arrow" src="images/spotify/angle-arrow-down.png">
+    </button>
+    <div class="panel">
+      <p>Toutes les playlists avec l'icône Lecture aléatoire seront diffusées en mode de lecture aléatoire.    </p>
+      <p>Certaines playlists ne comportent pas l'icône Lecture aléatoire, vous pouvez donc écouter les titres de votre choix.</p>
+    </div>
+        
+    <button class="accordion">Où puis-je trouver des podcasts ?
+        <img class="angle-arrow" src="images/spotify/angle-arrow-down.png">
+    </button>
+    <div class="panel">
+      <p>Appuyez sur <span class="green">Rechercher</span>. Sous <span class="green">Parcourir tout</span>, appuyez sur Podcasts.</p>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+    </script>
+
+</div>
+
+<!-- questions - end -->
+
+<!-- pret - start -->
+
+<div id="sp-pret">
+    <div id="sp-pret-text">Prêt ? C'est parti.</div>
+    <div class="sp-pret-button">téléchargez spotify free</div>
+</div>
+
+<!-- pret - end -->
+
+</main>
+        <!--footer - start-->
+        <footer>
+
+            <div id="block-black-up"> 
+                <div id="logo-block" >
+                    <a href="index.html"><img src="images/logo.png" alt="logo tech compass"></a>
+                    <a href="index.html">Tech Compass</a>
+                </div>
+                <div id="social-block">
+                    <h3>Suivez nous</h3>
+                    <ul>
+                        <li><img src="icons/facebook-icon.svg" alt="facebook icon"></li>
+                        <li><img src="icons/twitter-icon.svg" alt="twitter icon"></li>
+                        <li><img src="icons/youtube-icon.svg" alt="youtube icon"></li>
+                        <li><img src="icons/instagram-icon.svg" alt="instagram icon"></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="block-black-down"> 
+                <ul>
+                    <li>Contact</li>
+                    <li>FAQ</li>
+                    <li>La rédaction</li>
+                    <li>Comparaison des prix</li>
+                    <li>Partenaires techniques</li>
+                    <li>Paramétrer les cookies</li>
+                </ul>
+            </div>
+            <div id="white-block">
+                <ul>
+                    <li>Mentions légales</li>
+                    <li>Politique de protection des données personnelles</li>
+                    <li>Conditions Générales d’Utilisation</li>
+                    <li>FAQ - Vos choix concernant l'utilisation de cookie</li>
+                    <li>Tout droits réservés © 2022</li>
+                </ul>
+            </div>
+
+        </footer>
+        <!--footer - end-->
+
+            
+        </div>
+
+    </body>
+</html>
+

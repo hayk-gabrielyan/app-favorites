@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_2" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2057.44 2512.51">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #a70000;
+        filter: url(#drop-shadow-1);
+      }
+
+      .cls-2 {
+        fill: #fe0000;
+        filter: url(#drop-shadow-3);
+      }
+
+      .cls-3 {
+        fill: #680000;
+      }
+
+      .cls-4 {
+        fill: #d80001;
+        filter: url(#drop-shadow-2);
+      }
+    </style>
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="-14.17" dy="14.17"/>
+      <feGaussianBlur result="blur" stdDeviation="28.35"/>
+      <feFlood flood-color="#000" flood-opacity=".7"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-2" filterUnits="userSpaceOnUse">
+      <feOffset dx="-14.17" dy="14.17"/>
+      <feGaussianBlur result="blur-2" stdDeviation="28.35"/>
+      <feFlood flood-color="#000" flood-opacity=".7"/>
+      <feComposite in2="blur-2" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-3" filterUnits="userSpaceOnUse">
+      <feOffset dx="-14.17" dy="14.17"/>
+      <feGaussianBlur result="blur-3" stdDeviation="28.35"/>
+      <feFlood flood-color="#000" flood-opacity=".7"/>
+      <feComposite in2="blur-3" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="_Слой_2-2" data-name="Слой 2">
+    <polygon class="cls-3" points="675.82 71.18 1985.52 71.18 1985.69 2512.51 0 1672.44 675.82 71.18"/>
+    <polygon class="cls-1" points="863 71.18 1985.52 71.44 1985.69 2308.54 233.52 1564.8 863 71.18"/>
+    <polygon class="cls-4" points="1093.04 71.18 1985.52 71.18 1985.69 2066.81 518.72 1438.85 1093.04 71.18"/>
+    <polygon class="cls-2" points="1397.5 71.18 1985.69 71.18 1985.52 1764.45 879.51 1281.72 1397.5 71.18"/>
+  </g>
+</svg>
